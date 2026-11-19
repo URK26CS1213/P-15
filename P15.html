@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Medihive</title>
+<style>
+body{
+    font-family:Arial,sans-serif;
+    background-color:violet;
+    margin:20px;
+}
+body.dark-mode{
+    background-color:black;
+}
+.container{
+    width:700px;
+    margin:auto;
+    padding:20px;
+    background-color:white;
+    border:2px solid lightblue;
+    border-radius:10px;
+}
+h1{
+    color:purple;
+    text-align:center;
+    text-transform:uppercase;
+}
+h2{
+    color:purple;
+    font-size:22px;
+}
+p{
+    color:black;
+    font-size:15px;
+    line-height:1.6;
+    text-align:justify;
+}
+img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:8px;
+}
+.layout{
+    display:flex;
+    gap:15px;
+}
+.box{
+    flex:1;
+    padding:15px;
+    background-color:pink;
+    border-radius:8px;
+}
+.box h3{
+    color:purple;
+}
+button{
+    padding:5px 10px;
+    cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<button onclick="toggleDarkMode()">switch to dark mode</button>
+
+<div class="container">
+
+<h1>MEDIHIVE</h1>
+
+<img src="medihive.jpg" alt="Medihive healthcare service">
+
+<h2>Welcome to Medihive</h2>
+<p>
+Medihive is a friendly place for healthcare. We provide information about telemedicine,
+online consultation, doctors and healthcare services. Our goal is to keep every patient
+healthy, happy and safe.
+</p>
+
+<div class="layout">
+<div class="box">
+<h3>Telemedicine</h3>
+<p>
+Consult healthcare professionals online from anywhere, anytime.
+</p>
+</div>
+
+<div class="box">
+<h3>Online Consultation</h3>
+<p>
+Get medical guidance and consultation through online services.
+</p>
+</div>
+</div>
+
+</div>
+
+<script>
+function toggleDarkMode(){
+    document.body.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+</html>
